@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        width: auto;
+        height: 745px;
+    }
+
+    button {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        width: 250px;
+    }
+
+
+
+    .dark {
+        background-color: black;
+        transition: 1s;
+    }
+
+    .light {
+        background-color: #fff;
+        transition: 1s;
+    }
+
+</style>
+<body>
+    <div id="cont" class="container">
+        <div class="modes">
+            <button onclick="darkMode()">dark mode</button>
+            <button onclick="lightMode()">light mode</button>
+        </div>
+    </div>
+    <script>
+        const cont = document.body
+        
+        let darkMode = () => {
+            cont.classList.add('dark')
+        }
+
+        let lightMode = () => {
+            cont.classList.add('light')
+        }
+
+    </script>
+</body>
+</html>
